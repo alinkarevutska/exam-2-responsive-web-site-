@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Gotham-Light";
+    src: local("Gotham-Light"),
+    url("/fonts/Gotham-Light.ttf") format("ttf"),
+    url("/fonts/Gotham-Light.woff") format("woff"),
+    url("/fonts/Gotham-Light.woff2") format("woff2");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham-Book";
+    src: local("Gotham-Book"),
+    url("/fonts/Gotham-Book.ttf") format("ttf"),
+    url("/fonts/Gotham-Book.woff") format("woff"),
+    url("/fonts/Gotham-Book.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+} 
+
+@font-face {
+    font-family: "Gotham-Medium";
+    src: local("Gotham-Medium"),
+    url("/fonts/Gotham-Medium.ttf") format("ttf"),
+    url("/fonts/Gotham-Medium.woff") format("woff"),
+    url("/fonts/Gotham-Medium.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gotham-Bold";
+    src: local("Gotham-Bold"),
+         url("/fonts/Gotham-Bold.ttf") format("ttf"),
+         url("/fonts/Gotham-Bold.woff") format("woff"),
+         url("/fonts/Gotham-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');

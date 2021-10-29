@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./img/skyscraper.png"/>
+    <script src="https://kit.fontawesome.com/754ab2f32e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/slick.css"/>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Monticello</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav nav">
+            <div class="header__nav__logo">
+                <img src="./img/Logo.svg" alt="monticello-logo" class="logo">
+            </div>
+                <ul class="header__nav__menu menu">
+                    <li class="header__nav__item"><a  href="#" class="header__nav__link">About us</a>
+                    </li>
+                    <li class="header__nav__item"><a href="#projects" class="header__nav__link">Projects</a>
+                    </li>
+                    <li class="header__nav__item"><a href="#news" class="header__nav__link">News</a>
+                    </li>
+                    <li class="header__nav__item"><a href="#contacts" class="header__nav__link">Contact</a>
+                    </li>
+                </ul>
+                <div class="header__nav__contacts social">
+                    <div class="social__item">
+                        <a href="https://www.facebook.com/" class="social__link"><i class="fab fa-facebook-f contacts__icon"></i></a>
+                    </div>
+                    <div class="social__item">
+                        <a href="https://twitter.com/" class="social__link"><i class="fab fa-twitter contacts__icon"></i></a>
+                    </div>
+                    <div class="social__item">
+                        <a href="https://www.instagram.com/" class="social__link"><i class="fab fa-instagram contacts__icon"></i></a>
+                    </div>
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+        </nav>
+        <h1 class="header__title">Simple & Modern</h1>
+        <h2 class="header__subtitle">We make the world's beautiful every day</h2>
+        <div class="header__slider slider">
+            <div class="header__slider_item item">
+                <img class="header__slider_img" src="./img/header-item_1.png" alt="Monticello-building-company">
+            </div>
+            <div class="header__slider_item item-2">
+                <img class="header__slider_img" src="./img/header-item_2.jpg" alt="building-drafts">
+            </div>
+            <div class="header__slider_item item-3">
+                <img class="header__slider_img" src="./img/header-item_3.jpg" alt="commercial-building">
+            </div>
+        </div>
+            <a href="#the-end" class="header__scroll"><i class="fas fa-chevron-down"></i></a>
+        </header>
+    <main class="main">
+        <h3 class="projects__title main__title" id="projects">What we do</h3>
+        <section class="projects section-1" >
+            <div class="projects__picture-1">
+                <img src="./img/trade-center.png" alt="trade-center-building-new-york" class="projects__img">
+            </div>
+            <div class="projects__info"> 
+                <h4 class="projects__subtitle">One world</h4>
+                <h3 class="projects__title">Trade center</h3>
+                <p class="projects__descr main_descr">
+                Increasing prosperity in our lives can be accomplished by having the right frame of mind. The truth is, our thoughts are very powerful.
+                </p>
+                <button class="projects__button main__button button__more " id="trade-center-btn"><span>More details</span></button>
+                <div class="projects__location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="projects__location__name">
+                    New York Sity, United States - 1776 feet</span></div>
+            </div> 
+            <div class="popup" id="popup-trade-center">
+                 <div class="popup__body">
+                    <div class="popup__content">
+                      <a href="#" class="popup__close" id="trade-close">Close</a>
+                      <div class="popup__title">Trade center</div>
+                      <div class="popup__text">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto illo ea, doloremque animi sequi libero dolore quas eius aperiam nihil eum, distinctio ullam autem minima mollitia nam ad molestias voluptate!</p>
+                        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, enim.</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="projects section-2">
+        <div class="projects__info">
+            <h4 class="projects__subtitle">International</h4>
+            <h3 class="projects__title">Commerce centre</h3>
+            <p class="projects__descr main_descr">
+            Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.
+            </p>
+            <button class="projects__button main__button button__more" id="commercial-center-btn"><span>More details</span></button>
+            <div class="projects__location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="projects__location__name">Hong Kong - 1588 Feet</span></div>
+        </div> 
+        <div class="projects__picture-2">
+            <img src="./img/commerce-center.png" alt="commerce-center-hong-kong" class="projects__img">
+        </div>
+        <div class="popup" id="popup-commerce-center">
+            <div class="popup__body">
+               <div class="popup__content">
+                 <a href="#" class="popup__close " id="commerce-close">Close</a>
+                 <div class="popup__title">Commerce centre</div>
+                 <div class="popup__text">
+                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto illo ea, doloremque animi sequi libero dolore quas eius aperiam nihil eum, distinctio ullam autem minima mollitia nam ad molestias voluptate!</p>
+                   <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, enim.</p>
+                 </div>
+               </div>
+           </div>
+       </div>
+    </section>
+    <section class="news" id="news">
+        <h3 class="news__title main__title">Latest news</h3>
+        <div class="news__slider slider">
+            <div class="news__slider__wrapper">
+                <div class="news__slider__item">
+                    <img src="./img/news-slide-1.png" alt="commercial-building" class="news__slider__image">
+                </div>
+            <h4 class="news__slider__title">See the unmatched beauty of the great.</h4>
+            <p class="news__slider__descr main_descr">Free directories: directories are perfect for customers that are...</p>
+            <div class="news__slider__info">
+                <img src="./img/client-1.png" alt="" class="news__slider_img">
+                <div class="news__slider__data">
+                <p class="news__slider__author">Isaac Dunn</p>
+                <span class="news__slider__date">09 Feb 2017</span>
+            </div>
+            </div>
+            </div>
+            <div class="news__slider__wrapper">
+                <div class="news__slider__item">
+                    <img src="./img/news-slide-2.png" alt="white-building" class="news__slider__image">
+                </div>
+                <h4 class="news__slider__title">Effective advertising pointers.</h4>
+                <p class="news__slider__descr main_descr">Having a home based business is a wonderful asset to your life...</p>
+                <div class="news__slider__info">
+                    <img src="./img/client-2.png" alt="" class="news__slider_img">
+                    <div class="news__slider__data">
+                    <p class="news__slider__author">Dominic Freeman</p>
+                    <span class="news__slider__date">24 Apr 2017</span>
+                    </div>
+                </div>
+                </div>
+                <div class="news__slider__wrapper">
+                    <div class="news__slider__item">
+                        <img src="./img/news-slide-3.png" alt="modern-building" class="news__slider__image">
+                    </div>
+                    <h4 class="news__slider__title">Hypnitize yourself into the ghost.</h4>
+                    <p class="news__slider__descr main_descr">There are many things that are important to catalog design....</p>
+                    <div class="news__slider__info">
+                        <img src="./img/client-3.png" alt="" class="news__slider_img">
+                        <div class="news__slider__data">
+                            <p class="news__slider__author">Alice Ward</p>
+                            <span class="news__slider__date">30 Dec 2017</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="news__slider__wrapper">
+                        <div class="news__slider__item">
+                            <img src="./img/news-slide-4.jpg" alt="commercial-building" class="news__slider__image">
+                        </div>
+                    <h4 class="news__slider__title">Lorem ipsum dolor sit amet consectetur.</h4>
+                    <p class="news__slider__descr main_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="news__slider__info">
+                        <img src="./img/client-2.png" alt="" class="news__slider_img">
+                        <div class="news__slider__data">
+                        <p class="news__slider__author">Dominic Freeman</p>
+                        <span class="news__slider__date">15 May 2021</span>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="news__slider__wrapper">
+                        <div class="news__slider__item">
+                            <img src="./img/news-slide-5.jpg" alt="commercial-building" class="news__slider__image">
+                        </div>
+                    <h4 class="news__slider__title">Lorem ipsum dolor sit amet consectetur.</h4>
+                    <p class="news__slider__descr main_descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <div class="news__slider__info">
+                        <img src="./img/client-3.png" alt="" class="news__slider_img">
+                        <div class="news__slider__data">
+                        <p class="news__slider__author">Alice Ward</p>
+                        <span class="news__slider__date">21 Sep 2021</span>
+                        </div>
+                    </div>
+                    </div>
+        </div>
+    </section>
+    <section class="gallery" id="gallery">
+        <h3 class="gallery__title main__title">Gallery</h3>
+        <div class="gallery__wrapper">
+            <div class="gallery__picture-big">
+                <img src="./img/gallery-1.png" alt="building-360" class="gallery__img-big">
+            </div>
+            <div class="gallery__pictures-1">
+                <img src="./img/gallery-2.png" alt="buildimg-office" class="gallery__img-small">
+                <img src="./img/gallery-3.png" alt="commercial-room"
+                class="gallery__img-small">
+            </div>
+            <div class="gallery__pictures-2">
+                <img src="./img/gallery-4.png" alt="circle-building"
+                class="gallery__img-small">
+                <img src="./img/gallery-5.png" alt="modern-trade-center" class="gallery__img-small">
+            </div>
+        </div>
+        <button class="gallery__button main__button">
+            <span>See more</span></button>
+            <div class="gallery__wrapper gallery__more__wrapper">
+                <div class="gallery__pictures-1">
+                    <img src="./img/gallery-2.png" alt="buildimg-office" class="gallery__img-small">
+                    <img src="./img/gallery-3.png" alt="commercial-room"
+                    class="gallery__img-small">
+                </div>
+                <div class="gallery__pictures-2">
+                    <img src="./img/gallery-4.png" alt="circle-building"
+                    class="gallery__img-small">
+                    <img src="./img/gallery-5.png" alt="modern-trade-center" class="gallery__img-small">
+                </div>
+                <div class="gallery__picture-big">
+                    <img src="./img/gallery-1.png" alt="building-360" class="gallery__img-big">
+                </div>
+            </div>
+    </section>
+        <div class="map__div" id="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12102.274080499981!2d-73.9340644!3d40.6834751!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25c76372623bd%3A0x749e704edf140fd9!2sPeaches!5e0!3m2!1sru!2sua!4v1632226454918!5m2!1sru!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="footer__contacts">
+            <h3 class="footer__contacts__title main__title" id="contacts">Get in touch</h3>
+            <div class="footer__contacts__wrapper">
+                <div class="footer__contacts__data">
+                    <div class="footer__contacts__item"><i class="fas fa-map-marker-alt footer__contacts__icon"></i>
+                        <a href="https://goo.gl/maps/havhuBXG9xSLjBmz9" class="footer__contacts__info"> 91 Nolan Extencions Suite 670</a> 
+                    </div>
+                    <div class="footer__contacts__item">
+                        <i class="fas fa-phone-alt footer__contacts__icon"></i>
+                        <a href="tel:+0013568682454" class="footer__contacts__info"> +001 356 868 2454</a>
+                    </div>
+                    <div class="footer__contacts__item">
+                        <i class="fas fa-inbox footer__contacts__icon"></i>
+                        <a href="mailto:gahuy93@gmail.com" class="footer__contacts__info"> gahuy93@gmail.com</a>
+                    </div>
+                    <div class="footer__contacts__item">
+                        <i class="far fa-clock footer__contacts__icon"></i>
+                        <span class="footer__contacts__info"> From 07:05AM to 19:30PM</span>
+                    </div>
+                </div>
+                <form action="#" method="get" class="contacts__form">
+                    <input class="contacts__form__input" type="text" name="name" placeholder="Your name" required>
+                    <input class="contacts__form__input" type="email" name="email" placeholder="Your email" required>
+                    <button class="contacts__form__submit main__button" type="submit" value="Send">Submit</button>
+                </form>
+            </div>
+        </section>
+        <div class="footer__wrapper">
+        <div class="footer__logo">
+            <a href="#">
+            <img src="./img/Logo.svg" alt="monticello-logo" class="logo">
+            </a>
+        </div>
+            <div class="social" id="the-end">
+                <div class="social__item">
+                    <a href="https://www.facebook.com/" class="social__link"><i class="fab fa-facebook-f contacts__icon"></i></a>
+                </div>
+                <div class="social__item">
+                    <a href="https://twitter.com/" class="social__link"><i class="fab fa-twitter contacts__icon"></i></a>
+                </div>
+                <div class="social__item">
+                    <a href="https://www.instagram.com/" class="social__link"><i class="fab fa-instagram contacts__icon"></i></a>
+                </div>    
+        </div>
+        <div class="contacts__rights">
+            <span class="footer__copyright">
+                Copyright &copy; 2017 Monticello   
+            </span>
+            <span>|</span>
+            <span class="footer__author">
+                Made with &#10084; by Ga Huy
+            </span>
+        </div>
+    </div>
+    </footer>
+    <script src="./js/maps.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
