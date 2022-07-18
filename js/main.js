@@ -47,9 +47,11 @@ $(document).ready(function(){
 });
 
 const btn_gallery = document.querySelector('.gallery__button');
+btn_gallery.innerHTML = 'See more';
+const gallery_more = document.querySelector('.gallery__more__wrapper');
+
 btn_gallery.addEventListener('click', function() {
-  btn_gallery.innerHTML =
-    (btn_gallery.innerHTML === 'Close') ? btn_gallery.innerHTML = 'See more' : btn_gallery.innerHTML = 'Close';
+  btn_gallery.innerHTML = btn_gallery.innerHTML === 'See more' ? 'Close' : 'See more';
 });
 
 // --------popups---------

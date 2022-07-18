@@ -1,8 +1,3 @@
-@mixin wideContainer {
-    display: flex;
-    padding: 0 calc(50vw - 600px);
-}
-
 @mixin fontBold {
     font-family: "Gotham-Bold", sans-serif;
     text-transform: uppercase;
@@ -28,25 +23,4 @@
     border-radius: 50%;
     color: white;
     text-decoration: none;  
-}
-
-@mixin containerUpTo1200 {
-    display: flex;
-    padding: 0 calc(50vw - 450px);
-}
-@mixin containerUpTo992 {
-    display: flex;
-    padding: 0 calc(50vw - 400px);
-}
-@mixin containerUpTo768 {
-    display: flex;
-    padding: 0 calc(50vw - 300px);
-}
-@mixin containerUpTo576 {
-    display: flex;
-    padding: 0 calc(50vw - 250px);
-}
-@mixin containerUpTo320 {
-    display: flex;
-    padding: 0 calc(50vw - 150px);
 }

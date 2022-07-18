@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,300&display=swap');
 @import "_fonts.scss";
 @import "mixins";
+@import "vars";
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +12,8 @@
     position: relative;
     text-align: center;
     &__nav {
-    @include wideContainer;
+    display: flex;
+    padding: $wideContainer;
     justify-content: space-around;
     align-items: center;
     padding-top: 30px;
@@ -179,7 +181,7 @@
 .projects {
     display: flex;
     justify-content: space-between;
-    @include wideContainer;
+    padding: $wideContainer;
     &__title {
         @include fontBold;
         margin-bottom: 30px;
@@ -244,7 +246,8 @@
 }
 
 .news__slider {
-    @include wideContainer;
+    display: flex;
+    padding: $wideContainer;
     align-items: center;
     padding-bottom: 210px;
     &__wrapper {
@@ -325,16 +328,18 @@ position: relative;
 }
 .slick-prev {
     margin-right: 20px;
-    background: url(/img/prev.png) no-repeat;
+    background: url(../img/prev.png) no-repeat;
     background-position: center center;
 }
 .slick-next {
-    background: url(/img/next.png) no-repeat;
+    margin-left: 20px;
+    background: url(../img/next.png) no-repeat;
     background-position: center center;
 }
 .gallery {
     &__wrapper {
-        @include wideContainer;
+        display: flex;
+        padding: $wideContainer;
         justify-content: space-around;
         align-items: space-between;
         height: 100%;
@@ -367,6 +372,7 @@ position: relative;
     &__wrapper {
         display: none;
         margin-bottom: 140px;
+        padding: 0 calc(50vw - 600px);
     }
 }
 .map__div {
@@ -528,7 +534,7 @@ position: relative;
 
 @media screen and (max-width: 1200px) {
     .header__nav, .projects, .news__slider, .gallery__wrapper, .gallery__more__wrapper {
-        @include containerUpTo1200;
+        padding: $containerUpTo1200;
     }
     .header__nav {
         padding-top: 20px;
@@ -569,6 +575,9 @@ position: relative;
             max-width: 30px;
         }
     }
+    .news__slider__info>img {
+        width: 15%;
+    }
     .news__slider__wrapper {
         max-width: 300px;    
     }
@@ -581,7 +590,7 @@ position: relative;
 }
 @media screen and (max-width: 992px) {
     .header__nav, .projects, .news__slider, .gallery__wrapper, .gallery__more__wrapper {
-        @include containerUpTo992;
+        padding: $containerUpTo992;
     }
     .header__nav {
         justify-content: space-between;
@@ -617,7 +626,7 @@ position: relative;
 }
     @media screen and (max-width: 768px) {
         .header__nav, .projects, .news__slider, .gallery__wrapper, .gallery__more__wrapper {
-            @include containerUpTo768;
+            padding: $containerUpTo768;
         }
         .header__nav {
             background-color: #7e5aff;
@@ -718,6 +727,10 @@ position: relative;
         .gallery__wrapper, .gallery__more__wrapper {
             flex-direction: column;
         }
+
+        .gallery__button {
+            margin: 200px auto 60px auto;
+        }
         .gallery__picture-big {
            height: 100%;
            max-height: 300px;
@@ -770,7 +783,7 @@ position: relative;
 }
     @media screen and (max-width: 576px) {
         .header__nav, .projects, .news__slider, .gallery__wrapper, .gallery__more__wrapper {
-            @include containerUpTo576;
+            padding: $containerUpTo576;
         }
         .header__nav__item {
             margin-right: 0;
@@ -814,6 +827,9 @@ position: relative;
              max-width: 500px;
              height: auto;
         }   
+        .gallery__button {
+            margin: 150px auto 60px auto;
+        }
         .footer__contacts {
             left: 50%;
             margin-left: -50%;
@@ -860,7 +876,7 @@ position: relative;
 }
     @media screen and (max-width: 320px) {
         .header__nav, .projects, .news__slider, .gallery__wrapper, .gallery__more__wrapper {
-            @include containerUpTo320;
+            padding: $containerUpTo320;
         }
         .logo {
             width: 100%;
